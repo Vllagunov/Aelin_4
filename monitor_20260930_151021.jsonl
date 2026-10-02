@@ -1,0 +1,35 @@
+{"time": "2026-09-30T15:10:21", "event": "MONITOR_START", "data": {"version": "0.7"}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "01_core", "info": {"name": "Ядро", "version": "0.1", "module": "01_core", "description": "Центральный модуль обработки взаимодействия Аэлин", "status": "READY"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "02_memory", "info": {"name": "ПАМЯТЬ", "version": "0.2", "module": "02_memory", "description": "Постоянная память Аэлин"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "03_world", "info": {"name": "МИР", "version": "0.1", "module": "03_world", "description": "Внутренняя модель мира Аэлин"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "04_prediction", "info": {"name": "ПРОГНОЗ", "version": "0.1", "module": "04_prediction", "description": "Формирование возможных следующих состояний и событий"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "05_learning", "info": {"name": "ОБУЧЕНИЕ", "version": "0.2", "module": "05_learning", "description": "Накопление опыта и формирование новых знаний"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "06_perception", "info": {"name": "ВОСПРИЯТИЕ", "version": "0.1", "module": "06_perception", "description": "Получение и первичная обработка входящей информации"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "07_questions", "info": {"name": "ВОПРОСЫ", "version": "0.1", "module": "07_questions", "description": "Формирование собственных вопросов из неизвестного"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "08_voice", "info": {"name": "ГОЛОС", "version": "0.3", "module": "08_voice", "description": "Голосовой ввод и вывод Аэлин"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOAD_ERROR", "data": {"module": "09_speech_to_text", "error": "invalid syntax (09_speech_to_text.py, line 1)"}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_NOT_LOADED", "data": {"module": "09_speech_to_text", "reason": "invalid syntax (09_speech_to_text.py, line 1)"}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "10_scenario", "info": {"name": "СЦЕНАРИЙ", "version": "0.2", "module": "10_scenario", "description": "Загрузка условий эксперимента, потребности и шаблона из scenario.txt"}}}
+{"time": "2026-09-30T15:10:21", "event": "MODULE_LOADED", "data": {"module": "11_interpreter", "info": {"name": "ИНТЕРПРЕТАТОР СЦЕНАРИЯ", "version": "0.5", "module": "11_interpreter", "description": "Исполнение текстового шаблона сценария Аэлин", "status": "READY"}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "01_core", "result": {"status": "PASS", "module": "01_core", "checks": {"state": true, "counter": true, "interface": true}}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "02_memory", "result": {"status": "PASS", "message": "Память доступна", "state": {"dialogue": 0, "facts": 0, "questions": 0}}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "03_world", "result": {"status": "PASS", "message": "Модель мира создана", "state": {"self": {"name": "Аэлин", "known": [], "unknown": [], "interests": [], "goals": []}, "vladimir": {"known": [], "unknown": [], "interests": []}, "world": {"known": [], "unknown": []}}}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "04_prediction", "result": {"status": "PASS", "message": "Модуль прогноза работает"}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "05_learning", "result": {"status": "PASS", "message": "Модуль обучения работает"}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "06_perception", "result": {"status": "PASS", "message": "Модуль восприятия работает"}}}
+{"time": "2026-09-30T15:10:21", "event": "SELF_TEST", "data": {"module": "07_questions", "result": {"status": "PASS", "message": "Модуль автономных вопросов работает"}}}
+{"time": "2026-09-30T15:10:25", "event": "SELF_TEST", "data": {"module": "08_voice", "result": {"status": "PASS", "message": "Модуль голоса работает"}}}
+{"time": "2026-09-30T15:10:25", "event": "SELF_TEST", "data": {"module": "10_scenario", "result": {"status": "PASS", "message": "Сценарий загружен"}}}
+{"time": "2026-09-30T15:10:25", "event": "SELF_TEST", "data": {"module": "11_interpreter", "result": {"status": "PASS", "module": "11_interpreter", "checks": {"interface": true, "state": true}}}}
+{"time": "2026-09-30T15:10:25", "event": "INTERPRETER_CONNECTED", "data": {"scenario": "10_scenario", "voice": "08_voice", "speech_to_text": "09_speech_to_text", "learning": "05_learning"}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "01_core", "result": {"status": "PASS", "module": "01_core", "response": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "02_memory", "result": {"status": "PASS", "module": "02_memory", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "03_world", "result": {"status": "PASS", "module": "03_world", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "04_prediction", "result": {"status": "PASS", "module": "04_prediction", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "05_learning", "result": {"status": "PASS", "module": "05_learning", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "06_perception", "result": {"status": "PASS", "module": "06_perception", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "07_questions", "result": {"status": "PASS", "module": "07_questions", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "08_voice", "result": {"status": "PASS", "module": "08_voice", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "10_scenario", "result": {"status": "PASS", "module": "10_scenario", "message": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "CONNECTION_TEST", "data": {"module": "11_interpreter", "result": {"status": "PASS", "module": "11_interpreter", "response": "PONG"}}}
+{"time": "2026-09-30T15:10:25", "event": "AELIN_NOT_READY", "data": {"status": "NOT_READY", "loaded": ["01_core", "02_memory", "03_world", "04_prediction", "05_learning", "06_perception", "07_questions", "08_voice", "10_scenario", "11_interpreter"], "all_loaded": false, "self_tests": true, "connections": true, "interpreter_connected": true}}
